@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8" name='viewport' content="width=1000; user-scalable=0;">
+    <title>E-shop</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="df-dynamic-menu-component/df-dynamic-menu.js" ></script>
+    <script src="Nameday.js"></script>
+    <link rel="stylesheet" href="df-game/game.css">
+    <link rel="stylesheet" href="game2/game.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+    
+<body class="container-fluid">
+<header class="row">
+
+    <div class="col-xl-2 col-md-1 col-sm-0 col-0 d-none d-md-block sides" ></div>
+    <div class="col-xl-8 col-md-10  col-sm-12 col-12 headfooter" >
+        <nameday-component></nameday-component>
+        <a id="homeButton" onclick="addHomeBreadcrumb();">
+            <img id="homeImg" alt="eshop" src="https://www.pyromix.sk/wp-content/uploads/2020/05/eshop-2.png">
+        </a>
+        <web-counter></web-counter>
+    </div>
+    <div class="col-xl-2 col-md-1 col-sm-0 col-0 d-none d-md-block sides" >
+
+    </div>
+<!--    <div style=""></div>-->
+</header>
+<section class="row " >
+    <div class="col-xl-2 col-md-1 col-sm-0 col-0 d-none d-md-block sides" ></div>
+    <div class="col-xl-8 col-md-10 col-sm-12 col-12">
+<!--        <div class="container">-->
+            <div class="row">
+                <div class="col-xl-3 col-md-4 col-sm-3 col-3 " id="navbar">
+                    <df-dynamic-menu id="menu" onclick="addBreadcrumb();"></df-dynamic-menu>
+                    <ul>
+                        <li>
+                            <h1><a onclick="addContactBreadcrumb();" id="contact">Kontakt</a></h1>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-9 col-md-8 col-sm-9 col-9" id="content">
+                    <nav aria-label="Breadcrumb" class="breadcrumb">
+                        <ol id="breadcrumbList">
+                        </ol>
+                    </nav>
+                    <div id="gallery" onclick="addBreadcrumb();"></div>
+                    
+                    <table id="worktable" style="display: none;">
+                        <tr>
+                            <th>Práca</th>
+                            <th>Danko Tomáš</th>
+                            <th>Fullajtár Dominik</th>
+                            <th>Kačmár Marek</th>
+                        </tr>
+                        <tr>
+                            <td>Grafický návrh</td>
+                            <td class="dinowworkon">✘</td>
+                            <td class="workedon" >✔</td>
+                            <td class="workedon" >✔</td>
+                        </tr>
+                        <tr>
+                            <td>Realizácia grafického návrhu</td>
+                            <td class="workedon" >✔</td>
+                            <td class="dinowworkon">✘</td>
+                            <td class="dinowworkon">✘</td>
+                        </tr>
+                        <tr>
+                            <td>Breadcrumbs</td>
+                            <td class="dinowworkon">✘</td>
+                            <td class="dinowworkon">✘</td>
+                            <td class="workedon" >✔</td>
+                        </tr>
+                        <tr>
+                            <td>Component Menu</td>
+                            <td class="dinowworkon">✘</td>
+                            <td class="workedon" >✔</td>
+                            <td class="dinowworkon">✘</td>
+                        </tr>
+                        <tr>
+                            <td>Zobrazovanie produktov</td>
+                            <td class="dinowworkon">✘</td>
+                            <td class="workedon" >✔</td>
+                            <td class="dinowworkon">✘</td>
+                        </tr>
+                        <tr>
+                            <td>Component Počítadlo návštev</td>
+                            <td class="workedon" >✔</td>
+                            <td class="dinowworkon">✘</td>
+                            <td class="dinowworkon">✘</td>
+                        </tr>
+                        <tr>
+                            <td>Component Meniny</td>
+                            <td class="dinowworkon">✘</td>
+                            <td class="dinowworkon">✘</td>
+                            <td class="workedon" >✔</td>
+                        </tr>
+                        <tr>
+                            <td>Kontakt:</td>
+                            <td></td>
+                            <td>fullajtar.dominik@gmail.com</td>
+                            <td>kacmar.marek@gmail.com</td>
+                        </tr>
+                    </table>
+
+                    <div id="game1"  style="display: none;">
+                        <nav>
+                            <ul>
+                               <li>
+                                   <a onclick="addGameBreadcrumb('game1')">Hra1</a>
+                               </li> 
+                               <li>
+                                    <a onclick="addGameBreadcrumb('dfgame')">Hra2</a>
+                               </li> 
+                               <li>
+                                <a  onclick="addGameBreadcrumb('game2')">Hra3</a>
+                                </li> 
+                            </ul>
+                        </nav>
+                        <h1>Skladanie vianočného kapra</h1>
+                        <p>Pokúste sa sa poskladať kapra z 8 častí čo najrýchlejšie. V prípade, že budete mať problém s poskladaním skladačky, pod 
+                          obrázkom sa nachádza tlačidlo demo, ktoré po kliknutí naň zobrazí video ukážku so vzorovým poskladaním skladačky.
+                        </p>
+                        <p>Chýbajúca funkcionalita: V mobile je možné hýbať časťami ryby, no niektoré časti nezapadnú do obrysu.
+                            Taktiež je problém pri overovaní skončení hry. Chyby nastali po
+                            pridaní hry do spoločného projektu. Hra je plne funkčná mimo skupinového projektu.
+                        </p>
+                        <p>Autor tejto hry: Marek Kačmár</p>
+                        <div class="demo">
+                            <input type="button" value="Demo" onclick="showDemo()">
+                            <video width="600" height="550" controls style="display: none;" id="demo">
+                                <source src="demo1.mp4" type="video/mp4">
+                            Váš prehliadač nepodporuje tento typ video súboru
+                            </video>
+                        </div>
+                        <div id="stopwatch">
+                            <div>Čas: <span id="time"></span></div>
+                            <input type="button" value="Hrať" onclick="start();" id="timeB">
+                        </div>
+                        
+                        <div id="inside">
+                            <div id="tail" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
+                            <div id="head" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
+                            <div id="topLeftFin" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
+                            <div id="topRightFin" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
+                            <div id="downRightFin" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
+                            <div id="downMidFin" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
+                            <div id="downLeftFin" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
+                            <div id="middle" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
+                        </div>
+                    
+                        <div id="fishtank" style="display: none;">
+                            <div class="obrazok"><img src="game1/cast4.png" alt="tail" draggable="true" ondragstart="drag(event)" id="castE" class="kapor"></div>
+                            <div class="obrazok"><img src="game1/cast8.png" alt="head" draggable="true" ondragstart="drag(event)" id="castA" class="kapor"></div>
+                            <div class="obrazok"><img src="game1/cast6.png" alt="topLeftFin" draggable="true" ondragstart="drag(event)" id="castD" class="kapor"></div>
+                            <div class="obrazok"><img src="game1/cast5.png" alt="topRightFin" draggable="true" ondragstart="drag(event)" id="castG" class="kapor"></div>
+                            <div class="obrazok"><img src="game1/cast3.png" alt="downRightFin" draggable="true" ondragstart="drag(event)" id="castF" class="kapor"></div>
+                            <div class="obrazok"><img src="game1/cast2.png" alt="downMidFin" draggable="true" ondragstart="drag(event)" id="castB" class="kapor"></div>
+                            <div class="obrazok"><img src="game1/cast1.png" alt="downLeftFin" draggable="true" ondragstart="drag(event)" id="castH" class="kapor"></div>
+                            <div class="obrazok"><img src="game1/cast7.png" alt="middle" draggable="true" ondragstart="drag(event)" id="castC" class="kapor"></div>
+                        </div>
+                        
+                    </div>
+                    <div id="dfgame" style="display: none;">
+                        <nav>
+                            <ul>
+                               <li>
+                                   <a onclick="addGameBreadcrumb('game1')">Hra1</a>
+                               </li> 
+                               <li>
+                                    <a onclick="addGameBreadcrumb('dfgame')">Hra2</a>
+                               </li> 
+                               <li>
+                                    <a  onclick="addGameBreadcrumb('game2')">Hra3</a>
+                                </li> 
+                            </ul>
+                        </nav>
+                        <div class="head">
+                            <h1 class="">Poskladaj si Pikačua </h1>
+                            <h2 id="timertitle">Časomiera: <span id="minutes">00</span>:<span id="seconds">00</span> <button id="startfullajtar" class="restartBtn" onclick="newFullajtarGame()">Štart</button> <button id="fullajtardemobtn" class="restartBtn" onclick="demoFullajtarGame()">Demo</button></h2>
+                            <h3 class="" id="win">Skladaj!
+
+                            </h3>
+                        </div>
+
+                        <div id="fullajtarboard">
+                            <div id="backgroundfullajtar">
+                                <div id="fullajtarbackgroundimg"> </div>
+                                <div id="pikachu2" class="imgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+                                <div id="pikachu1" class="imgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+                                <div id="pikachu5" class="imgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+                                <div id="pikachu4" class="imgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+                                <div id="pikachu8" class="imgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+                                <div id="pikachu9" class="imgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+                                <div id="pikachu3" class="imgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+                                <div id="pikachu6" class="imgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+                                <div id="pikachu7" class="imgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+                            </div>
+                            <p id="fullajtarauthor">Autor: Dominik Fullajtár</p>
+                        </div>
+
+                        <div id="imgcontainer1" class="startimgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+                            <img id="pikachupart1" class="imgpart" src="df-game/img/pokemon-pikachu-head2.png" draggable="true" ondragstart="drag(event)" width="112.5" empty="false" alt="tvar">
+                        </div>
+                        <div id="imgcontainer2" class="startimgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+                            <img id="pikachupart2" class="imgpart" src="df-game/img/pokemon-pikachu-torso2.png" draggable="true" ondragstart="drag(event)" width="125" empty="false" alt="trup">
+                        </div>
+                        <div id="imgcontainer3" class="startimgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+                            <img id="pikachupart3" class="imgpart" src="df-game/img/pokemon-pikachu-tail.png" draggable="true" ondragstart="drag(event)" width="123" empty="false" alt="chvost">
+                        </div>
+                        <div id="imgcontainer4" class="startimgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+                            <img id="pikachupart4" class="imgpart" src="df-game/img/pokemon-pikachu-right-ear3.png" draggable="true" ondragstart="drag(event)" width="90.5" empty="false" alt="prave ucho">
+                        </div>
+                        <div id="imgcontainer5" class="startimgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+                            <img id="pikachupart5" class="imgpart" src="df-game/img/pokemon-pikachu-left-ear2.png" draggable="true" ondragstart="drag(event)" width="26" empty="false" alt="lave ucho">
+                        </div>
+
+                        <div class="fullajtarbottombar">
+                            <div id="imgcontainer6" class="startimgcontainer bottom" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+                                <img id="pikachupart6" class="imgpart" src="df-game/img/pokemon-pikachu-right-foot.png" draggable="true" ondragstart="drag(event)" width="42" empty="false" alt="prava noha">
+                            </div>
+                            <div id="imgcontainer7" class="startimgcontainer bottom" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+                                <img id="pikachupart7" class="imgpart" src="df-game/img/pokemon-pikachu-left-foot2.png" draggable="true" ondragstart="drag(event)" width="43.5" empty="false" alt="lava noha">
+                            </div>
+                            <div id="imgcontainer8" class="startimgcontainer bottom" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+                                <img id="pikachupart8" class="imgpart" src="df-game/img/pokemon-pikachu-left-hand2.png" draggable="true" ondragstart="drag(event)" width="68" empty="false" alt="lava ruka">
+                            </div>
+                            <div id="imgcontainer9" class="startimgcontainer bottom" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+                                <img id="pikachupart9" class="imgpart" src="df-game/img/pokemon-pikachu-right-hand.png" draggable="true" ondragstart="drag(event)" width="65" empty="false" alt="prava ruka">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="game2"  style="display: none;">
+                        <nav>
+                            <ul>
+                               <li>
+                                   <a onclick="addGameBreadcrumb('game1')">Hra1</a>
+                               </li> 
+                               <li>
+                                    <a onclick="addGameBreadcrumb('dfgame')">Hra2</a>
+                               </li> 
+                               <li>
+                                <a  onclick="addGameBreadcrumb('game2')">Hra3</a>
+                                </li> 
+                            </ul>
+                        </nav>
+                        <div class="stopwatch"></div>
+                            <button id="demo" onclick="displayDemo()">DEMO</button>
+                            <img id="cats"   alt="whole cat" src="img/cats-for-project.jpg" draggable="no" >
+                        <div id="innerGame"></div>
+                        
+                        </div>
+
+                </div>
+            </div>
+<!--        </div>-->
+    </div>
+    <div class="col-xl-2 col-md-1 col-sm-0 col-0 d-none d-md-block sides" ></div>
+</section>
+
+
+<footer class="row">
+    
+    <div class="col-xl-2 col-md-1 col-sm-0 col-0 d-none d-md-block sides"></div>
+    <div class="col-xl-8 col-md-10 col-sm-12 col-12 headfooter" ><a><h1 onclick="addGameBreadcrumb('game1');" id="gamezone">Herná zóna</h1></a></div>
+    <div class="col-xl-2 col-md-1 col-sm-0 col-0 d-none d-md-block sides" ></div>
+    
+</footer>
+<script src="game2/game.js"></script>
+<script src="breadcrumbs.js"></script>
+<script src="game1script.js"></script>
+<script src="script.js"></script>
+<script src="Web-counter/Web-counter.js"></script>
+<script src="df-game/df-game.js"></script>
+<script src="df-game/DragDropTouch.js"></script> <!-- polyfill prevzaty z internetu na funkciu drag&drop pre mobilne zariadenia Fullajtar-->
+</body>
+</html>

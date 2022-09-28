@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="game.css">
+    <title>Fullajtár Dominik</title>
+</head>
+<body id="body">
+    <div id="dfgame">
+        <div class="head">
+            <h1 class="">Poskladaj si Pikačua </h1>
+            <h2 id="timertitle">Časomiera: <span id="minutes">00</span>:<span id="seconds">00</span> <button id="startfullajtar" class="restartBtn" onclick="newFullajtarGame()">Reštart</button> <button id="fullajtardemobtn" class="restartBtn" onclick="demoFullajtarGame()">Demo</button></h2>
+            <h3 class="" id="win">Skladaj!
+
+            </h3>
+        </div>
+
+        <div id="fullajtarboard">
+            <div id="backgroundfullajtar">
+                <div id="fullajtarbackgroundimg"> </div>
+                <div id="pikachu2" class="imgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+                <div id="pikachu1" class="imgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+                <div id="pikachu5" class="imgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+                <div id="pikachu4" class="imgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+                <div id="pikachu8" class="imgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+                <div id="pikachu9" class="imgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+                <div id="pikachu3" class="imgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+                <div id="pikachu6" class="imgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+                <div id="pikachu7" class="imgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true"></div>
+            </div>
+            <p id="fullajtarauthor">Autor: Dominik Fullajtár</p>
+        </div>
+
+        <div id="imgcontainer1" class="startimgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+            <img id="pikachupart1" class="imgpart" src="img/pokemon-pikachu-head2.png" draggable="true" ondragstart="drag(event)" width="112.5" empty="false" alt="tvar">
+        </div>
+        <div id="imgcontainer2" class="startimgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+            <img id="pikachupart2" class="imgpart" src="img/pokemon-pikachu-torso2.png" draggable="true" ondragstart="drag(event)" width="125" empty="false" alt="trup">
+        </div>
+        <div id="imgcontainer3" class="startimgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+            <img id="pikachupart3" class="imgpart" src="img/pokemon-pikachu-tail.png" draggable="true" ondragstart="drag(event)" width="123" empty="false" alt="chvost">
+        </div>
+        <div id="imgcontainer4" class="startimgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+            <img id="pikachupart4" class="imgpart" src="img/pokemon-pikachu-right-ear3.png" draggable="true" ondragstart="drag(event)" width="90.5" empty="false" alt="prave ucho">
+        </div>
+        <div id="imgcontainer5" class="startimgcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+            <img id="pikachupart5" class="imgpart" src="img/pokemon-pikachu-left-ear2.png" draggable="true" ondragstart="drag(event)" width="26" empty="false" alt="lave ucho">
+        </div>
+
+        <div class="fullajtarbottombar">
+            <div id="imgcontainer6" class="startimgcontainer bottom" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+                <img id="pikachupart6" class="imgpart" src="img/pokemon-pikachu-right-foot.png" draggable="true" ondragstart="drag(event)" width="42" empty="false" alt="prava noha">
+            </div>
+            <div id="imgcontainer7" class="startimgcontainer bottom" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+                <img id="pikachupart7" class="imgpart" src="img/pokemon-pikachu-left-foot2.png" draggable="true" ondragstart="drag(event)" width="43.5" empty="false" alt="lava noha">
+            </div>
+            <div id="imgcontainer8" class="startimgcontainer bottom" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+                <img id="pikachupart8" class="imgpart" src="img/pokemon-pikachu-left-hand2.png" draggable="true" ondragstart="drag(event)" width="68" empty="false" alt="lava ruka">
+            </div>
+            <div id="imgcontainer9" class="startimgcontainer bottom" ondrop="drop(event)" ondragover="allowDrop(event)" empty="true">
+                <img id="pikachupart9" class="imgpart" src="img/pokemon-pikachu-right-hand.png" draggable="true" ondragstart="drag(event)" width="65" empty="false" alt="prava ruka">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="df-game.js"></script>
+<script src="DragDropTouch.js"></script> <!-- polyfill prevzaty z internetu na funkciu drag&drop pre mobilne zariadenia -->
+</html>

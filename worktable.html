@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="df-dynamic-menu-component/df-dynamic-menu.js" ></script>
+    <title>E-shop</title>
+</head>
+<body>
+<nameday-component></nameday-component>
+
+<!--
+<nav aria-label="Breadcrumb" class="breadcrumb">
+    <ol id="breadcrumbList">
+        <li>
+            <a onload="addBreadcrumb();" onclick="clean()">
+                Domov
+            </a>
+        </li>
+
+    </ol>
+</nav>
+
+-->
+<style>
+    table {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+        table-layout: fixed;
+        word-break: break-word;
+    }
+
+    table td, table th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    table tr:nth-child(even){background-color: #f2f2f2;}
+    table tr:nth-child(odd){background-color: #e3e3e3;}
+
+
+    table td:hover, table th:hover{background-color: #FED143;}
+
+
+    table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #1D1D1D;
+        color: white;
+        font-size: x-large;
+    }
+
+    table tr{
+        width: 7.5%;
+        height: 72px;
+    }
+
+    table thead tr{
+        height: 52px;
+    }
+
+    thead tr th:first-child,
+    tbody tr td:first-child {
+        width: 3em;
+    }
+
+    thead th:first-child{
+        text-align: center;
+    }
+
+    main{
+        padding-bottom: 100px;
+    }
+
+    .workedon{
+        font-size: xxx-large;
+        color: green;
+    }
+    .workedon:hover{
+        color: white;
+        background-color: green;
+    }
+    .dinowworkon{
+        font-size: large;
+        color: red;
+    }
+    .dinowworkon:hover{
+        color: white;
+        background-color: red;
+    }
+</style>
+
+<table>
+    <tr>
+        <th>Práca</th>
+        <th>Danko Tomáš</th>
+        <th>Fullajtár Dominik</th>
+        <th>Kačmár Marek</th>
+    </tr>
+    <tr>
+        <td>Grafický návrh</td>
+        <td class="dinowworkon">✘</td>
+        <td class="workedon" >✔</td>
+        <td class="workedon" >✔</td>
+    </tr>
+    <tr>
+        <td>Realizácia grafického návrhu</td>
+        <td class="workedon" >✔</td>
+        <td class="dinowworkon">✘</td>
+        <td class="dinowworkon">✘</td>
+    </tr>
+    <tr>
+        <td>Breadcrumbs</td>
+        <td class="dinowworkon">✘</td>
+        <td class="dinowworkon">✘</td>
+        <td class="workedon" >✔</td>
+    </tr>
+    <tr>
+        <td>Component Menu</td>
+        <td class="dinowworkon">✘</td>
+        <td class="workedon" >✔</td>
+        <td class="dinowworkon">✘</td>
+    </tr>
+    <tr>
+        <td>Zobrazovanie produktov</td>
+        <td class="dinowworkon">✘</td>
+        <td class="workedon" >✔</td>
+        <td class="dinowworkon">✘</td>
+    </tr>
+    <tr>
+        <td>Component Počítadlo návštev</td>
+        <td class="workedon" >✔</td>
+        <td class="dinowworkon">✘</td>
+        <td class="dinowworkon">✘</td>
+    </tr>
+    <tr>
+        <td>Component Meniny</td>
+        <td class="dinowworkon">✘</td>
+        <td class="dinowworkon">✘</td>
+        <td class="workedon" >✔</td>
+    </tr>
+    <tr>
+        <td>Kontakt:</td>
+        <td></td>
+        <td>fullajtar.dominik@gmail.com</td>
+        <td>kacmar.marek@gmail.com</td>
+    </tr>
+</table>
+
+
+
+<!--
+<script src="breadcrumbs.js"></script>
+-->
+<script src="Nameday.js"></script>
+</body>
+</html>

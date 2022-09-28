@@ -1,0 +1,217 @@
+
+.imgcontainer {
+
+    width: 300px;
+    height: 300px;
+    padding: 1px;
+
+
+}
+.imgcontainer:hover{
+    padding: 0;
+    border: 1px solid #aaaaaa;
+
+}
+#backgroundfullajtar{
+    position: relative;
+    display: block;
+    margin: 90px 91px 91px;
+    height: 300px;
+    width: 300px;
+
+}
+#fullajtarbackgroundimg{
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0.25;
+    background-image: url("img/pokemon-pikachu-wall-decal.png");
+    background-size: contain;
+}
+#pikachu2{
+    position: absolute;
+    width: 110px;
+    height: 70px;
+    left: 56px;
+    top: 206px;
+}
+#pikachupart2{
+    margin-left: -8px;
+    margin-top: -35px;
+}
+#pikachu1 {
+    position: absolute;
+    width: 91px;
+    height: 75px;
+    left: 75px;
+    top: 87px;
+}
+
+#pikachu4{
+    position: absolute;
+    top: 34px;
+    left: 7px;
+    height: 51px;
+    width: 91px;
+}
+#pikachu5{
+    position: absolute;
+    top: 5px;
+    left: 161px;
+    height: 80px;
+    width: 26px;
+}
+#pikachu8{
+    position: absolute;
+    top: 139px;
+    left: 167px;
+    height: 38px;
+    width: 29px;
+}
+#pikachu9{
+    position: absolute;
+    top: 165px;
+    left: 43px;
+    height: 38px;
+    width: 66px;
+}
+#pikachu3{
+    position: absolute;
+    top: 163px;
+    left: 193px;
+    height: 54px;
+    width: 96px;
+}
+#pikachu6{
+    position: absolute;
+    top: 277px;
+    left: 39px;
+    height: 20px;
+    width: 44px;
+}
+#pikachu7{
+    position: absolute;
+    top: 277px;
+    left: 145px;
+    height: 20px;
+    width: 46px;
+}
+#pikachupart1{
+    margin-left: -12px;
+    margin-top: -17px;
+}
+#pikachupart5{
+    margin-left: 0;
+    margin-top: 1px;
+}
+#pikachupart4{
+    margin-left: 0;
+    margin-top: -2px;
+}
+#pikachupart7{
+    margin-left: 1px;
+    margin-top: 1px;
+}
+#pikachupart6{
+    margin-left: 1px;
+    margin-top: 3px;
+}
+#pikachupart3{
+
+    margin-left: -34px;
+    margin-top: -1px;
+
+}
+#pikachupart8{
+    margin-left: -26px;
+    margin-top: 0;
+}
+#pikachupart9{
+    margin-left: 2px;
+    margin-top: -2px;
+}
+.imgpart:hover{
+    opacity: 0.8;
+}
+
+.startimgcontainer {
+    width: 1px;
+    height: 1px;
+    padding: 35px 118px 99px 35px;
+    border: 1px solid black;
+    margin: 3px;
+    border-radius: 25px;
+}
+.startimgcontainer:hover{
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: #1D1D1D 2px 2px;
+}
+
+#fullajtarboard{
+    position: relative;
+    width: 482px;
+    height: 530px;
+    border-radius: 25px;
+    float: right;
+}
+#dfgame{
+    position: relative;
+    text-align: center;
+    width: 648px;
+    height: 100%;
+    background-color: rgb(162, 178, 208);
+    padding: 1rem;
+}
+.fullajtarbottombar{
+    display: flex;
+    right: 0;
+}
+#lefttop{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100px;
+}
+.head{
+    float: right;
+    margin-right: 100px;
+}
+.bottom{
+    height: 1px;
+    padding: 4px 118px 71px 35px;
+}
+.restartBtn{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    background-color: #888888;
+    padding: 4px;
+    border-radius: 20px;
+}
+.restartBtn:hover{
+    color: #888888;
+    background-color: black;
+    border: 2px solid #888888;
+    box-shadow: #1D1D1D 2px 2px 3px;
+}
+#fullajtarauthor{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#fullajtargif{
+    width: 482px;
+    height: 530px;
+}
+.fullajtaractivebutton{
+    color: #888888;
+    background-color: black;
+    border: 2px solid #888888;
+    box-shadow: #1D1D1D 2px 2px 3px;
+}
+#startfullajtar{
+    width: 7rem;
+}
